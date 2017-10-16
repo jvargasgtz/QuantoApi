@@ -1,0 +1,6 @@
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Entidad\bin\Debug\Entidad.dll
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Entidad\bin\Debug\Entidad.pdb
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Entidad\bin\Debug\Entidad.dll.CodeAnalysisLog.xml
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Entidad\bin\Debug\Entidad.dll.lastcodeanalysissucceeded
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Entidad\obj\Debug\Entidad.dll
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Entidad\obj\Debug\Entidad.pdb

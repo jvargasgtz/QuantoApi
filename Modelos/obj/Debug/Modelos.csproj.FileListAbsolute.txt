@@ -1,0 +1,35 @@
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Modelos\bin\Debug\Modelos.dll.config
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Modelos\bin\Debug\Modelos.dll
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Modelos\bin\Debug\Modelos.pdb
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Modelos\bin\Debug\Entidad.dll
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Modelos\bin\Debug\itextsharp.dll
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Modelos\bin\Debug\Newtonsoft.Json.dll
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Modelos\bin\Debug\Operacion.dll
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Modelos\bin\Debug\RestSharp.dll
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Modelos\bin\Debug\SharpCompress.dll
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Modelos\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Modelos\bin\Debug\Entidad.pdb
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Modelos\bin\Debug\Operacion.pdb
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Modelos\bin\Debug\itextsharp.xml
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Modelos\bin\Debug\Newtonsoft.Json.xml
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Modelos\bin\Debug\RestSharp.xml
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Modelos\obj\Debug\Modelos.csprojResolveAssemblyReference.cache
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Modelos\obj\Debug\Modelos.dll
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Modelos\obj\Debug\Modelos.pdb
+C:\desarrollo\QuantoAPI\Modelos\bin\Debug\Modelos.dll.config
+C:\desarrollo\QuantoAPI\Modelos\bin\Debug\Modelos.dll
+C:\desarrollo\QuantoAPI\Modelos\bin\Debug\Modelos.pdb
+C:\desarrollo\QuantoAPI\Modelos\bin\Debug\Entidad.dll
+C:\desarrollo\QuantoAPI\Modelos\bin\Debug\itextsharp.dll
+C:\desarrollo\QuantoAPI\Modelos\bin\Debug\Newtonsoft.Json.dll
+C:\desarrollo\QuantoAPI\Modelos\bin\Debug\Operacion.dll
+C:\desarrollo\QuantoAPI\Modelos\bin\Debug\RestSharp.dll
+C:\desarrollo\QuantoAPI\Modelos\bin\Debug\SharpCompress.dll
+C:\desarrollo\QuantoAPI\Modelos\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\desarrollo\QuantoAPI\Modelos\bin\Debug\Entidad.pdb
+C:\desarrollo\QuantoAPI\Modelos\bin\Debug\Operacion.pdb
+C:\desarrollo\QuantoAPI\Modelos\bin\Debug\itextsharp.xml
+C:\desarrollo\QuantoAPI\Modelos\bin\Debug\Newtonsoft.Json.xml
+C:\desarrollo\QuantoAPI\Modelos\bin\Debug\RestSharp.xml
+C:\desarrollo\QuantoAPI\Modelos\obj\Debug\Modelos.dll
+C:\desarrollo\QuantoAPI\Modelos\obj\Debug\Modelos.pdb

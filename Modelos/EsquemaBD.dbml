@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="credimonservicio" Class="EsquemaBDDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-6DHA0O4\SERVERSQL;Initial Catalog=credimonservicio;Persist Security Info=True;User ID=sa" SettingsObjectName="Modelos.Properties.Settings" SettingsPropertyName="credimonservicioConnectionString2" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.PLD_PERSONA" Member="PLD_PERSONA">
+    <Type Name="PLD_PERSONA">
+      <Column Name="idPersona" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Equivalencia" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="idTipo_Persona" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nombre_Completo" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Primer_Nombre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Segundo_Nombre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Primer_Apellido" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Segundo_Apellido" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Nacimiento" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="idActividad_Economica" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdPais_Nacimiento" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdPais_Nacionalidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idEstado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idEstado1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idEstado2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idEstado3" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idEstado4" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idEstado5" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Correo_Electronico" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="idPersona_Representante" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdEsGAFI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdEsParaisoFiscal" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdEsPoliticamenteExpuesto" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idClasificacion_Riesgo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idRevisado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idResultado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ultima_Revision" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="idUsuarioCreacion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FechaCreacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="idUsuarioActualizacion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FechaActualizacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Telefono" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Celular" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Ocupacion" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Profesion" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FIEL" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="IdEstadoCivil" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NomEmpresa" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="GiroEmpresa" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PuestoEmpresa" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IdPais_Empresa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OperacionMexico" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="IdSector_Economico" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdSucursal" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NomComercial" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="IdRepresentante" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RazonSocial" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="IdSociedad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdConyuge" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FechaMatrimonio" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LugarMatrimonio" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="IdGenero" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idPagaISR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idPagaIVA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idPagaIDE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RFC" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CURP" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="idRegistroAsociacion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdCarta_Poder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdActa_Constitutiva" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idEntidad_Nacimiento" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idOrigenRecursos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idDestinoRecursos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idFuncionario" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idActividad_Empresarial" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Telefono_Empresa" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="idCuentaContable" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CuentaContable" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Adicional1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Adicional2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Adicional3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Adicional4" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Adicional5" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="idGrupo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ActaMatrimonio" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Correo_Electronico_Laboral" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="idTipoRegistro" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idFuenteFondeo" Type="System.Decimal" DbType="Decimal(3,0)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CRE_PRODUCTO" Member="CRE_PRODUCTO">
+    <Type Name="CRE_PRODUCTO">
+      <Column Name="IdProducto" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="MontoMinimo" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="MontoMaximo" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="idPeriodoCuota" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PeriodosMinimo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PeriodosMaximo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdEsLinea" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idDivisa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idTipoCuota" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idTipoTasaInteres" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idTasadeInteres" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VariacionInteres" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="MinimoTasaInteres" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="MaximoTasaInteres" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="idCalculoTasaInteres" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idTipoTasaInteresMora" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idTasaInteresMora" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VariacionInteresMora" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="MinimoTasaInteresMora" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="MaximoTasaInteresMora" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="idCalendario" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DiasAnio" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idEstado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idUsuarioCreacion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FechaCreacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="idUsuarioActualizacion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FechaActualizacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="idCapitalizaIntereses" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdEsRevolvente" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idModalidadCobro" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCobraImpuesto" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DiasGracia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idHabilitarFechaPrimeraCuota" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CAT" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="idCalculoInteres" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCobraInteresCuotaSinCapital" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idRedondeaCuota" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DescripcionAdicional1" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DescripcionAdicional2" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DescripcionAdicional3" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DescripcionAdicional4" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DescripcionAdicional5" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Codigo1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo4" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo5" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo6" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo7" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo8" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo9" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo10" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="idTipoCartera" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idInteresMensual" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdHabilitarFechaVencimiento" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdHabilitarDeposito" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdPeriodosFijos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Monto1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Monto2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Monto3" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Monto4" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Monto5" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Fecha1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Fecha2" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Fecha3" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Fecha4" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Fecha5" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="idAjusteAbono" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idInteresDesembolso" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idTipoCredito" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idSerie" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCobrarInteresNoExigible" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCobrarCargosEnAbonoAdentadoyAnticipado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCalcularMoraHastaVencimientoCredito" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCalcularMoraDeSaldoInsolutoDeLineaCredito" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idTrasladarInteresACuotasConCapital" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CuentaContable" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IdClasificacionContable" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdTipoArrendamiento" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCobraImpuestoMoratorio" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CRE_CREDITO" Member="CRE_CREDITO">
+    <Type Name="CRE_CREDITO">
+      <Column Name="idCredito" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idEstadoCredito" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idPersonaSolicitante" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idSucursal" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idProducto" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Monto" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="idPeriodoCuota" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NumeroPeriodo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SaldoPrincipal" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="idLinea" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idDivisa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idTipoCuota" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idTipoTasaInteres" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idTasaInteres" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VariacionInteres" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="MinimoTasaInteres" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="MaximoTasaInteres" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="idCalculoTasaInteres" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idTipoTasaInteresMora" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idTasaInteresMora" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VariacionInteresMora" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="MinimoTasaInteresMora" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="MaximoTasaInteresMora" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="idCalendario" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DiasAnio" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idEstado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idUsuarioCreacion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FechaCreacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="idUsuarioActualizacion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FechaActualizacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TasaInteres" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="TasaInteresMoratorio" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="FechaApertura" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FechaDesembolso" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FechaVencimiento" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MontoDesembolsado" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="idEsLinea" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCapitalizaIntereses" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdEsRevolvente" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdFondeador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idFuncionario" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idTipoRegistro" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Destino" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="idDestino" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCalculaSuspenso" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Contrato" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DiasGracia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CAT" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="FechaPrimeraCuota" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="idRedondeaCuota" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCalculoInteres" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCobraInteresCuotaSinCapital" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCobraImpuesto" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCreditoOrigen" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idEstadoCreditoOrigen" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Codigo1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo4" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo5" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo6" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo7" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo8" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo9" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo10" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="idActividadEconomicaBanxico" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idTipoCartera" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NumeroCiclos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MontoFinanciado" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="MontoAportacion" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="MontoTotal" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="PorcentajeAportacion" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="HectareasPropias" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="HectareasRentadas" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="HectareasTotales" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="idMultiCicloDetalleOrigen" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ciclo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCultivo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idTemporada" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UDI" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="Concepto" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Documento" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="idInteresMensual" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdHabilitarFechaVencimiento" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MontoDeposito" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="IdHabilitarDeposito" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdPeriodosFijos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idAjusteAbono" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idInteresDesembolso" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCreditoAnterior" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idLineaAnterior" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdCuentaBanco" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TIR" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="TIRAnual" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="idTransaccionOrigen" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCausaOrigen" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="diasVencidoOrigen" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MesesVencidoOrigen" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PagosSostenidos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idEstadoPagoSostenido" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCobrarInteresNoExigible" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCobrarCargosEnAbonoAdentadoyAnticipado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCalcularMoraHastaVencimientoCredito" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCalcularMoraDeSaldoInsolutoDeLineaCredito" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idTrasladarInteresACuotasConCapital" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CuentaContable" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Equivalencia" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="TasaIntermediacion" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="TotalBienes" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="TotalComisiones" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="TotalInversiones" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="PagoInicial" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="FechaRevision" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UltimaRevisionTasaInteres" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="idCobraImpuestoMoratorio" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CRE_CREDITO_CONCEPTO" Member="CRE_CREDITO_CONCEPTO">
+    <Type Name="CRE_CREDITO_CONCEPTO">
+      <Column Name="IdCreditoConcepto" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdCredito" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdCuota" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdConcepto" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FechaInicio" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FechaFin" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FechaUltimoDevengamiento" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DiasCuota" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DiasDevengados" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Calculado" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Cargo" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Anticipado" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Abono" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Saldo" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="TasaReal" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="IdEstado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Tasa" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="Impuesto" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="SaldoInicial" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="CargoInterno" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="AbonoInterno" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="SaldoInterno" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="idCargo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Referencia" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="SaldosVigentes" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="SaldosVencidos" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="SaldoSuspenso" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CRE_HISTORICO_SALDO" Member="CRE_HISTORICO_SALDO">
+    <Type Name="CRE_HISTORICO_SALDO">
+      <Column Name="idHistoricoSaldo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idCredito" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idConcepto" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Fecha" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Saldo" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Impuesto" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="idEstado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idTipoMonto" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Cuotas" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CRE_COD_ESTADO_CREDITO" Member="CRE_COD_ESTADO_CREDITO">
+    <Type Name="CRE_COD_ESTADO_CREDITO">
+      <Column Name="idEstado" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

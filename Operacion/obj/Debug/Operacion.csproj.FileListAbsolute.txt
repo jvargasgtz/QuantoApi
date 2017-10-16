@@ -1,0 +1,6 @@
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Operacion\bin\Debug\Operacion.dll
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Operacion\bin\Debug\Operacion.pdb
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Operacion\bin\Debug\Operacion.dll.CodeAnalysisLog.xml
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Operacion\bin\Debug\Operacion.dll.lastcodeanalysissucceeded
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Operacion\obj\Debug\Operacion.dll
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Operacion\obj\Debug\Operacion.pdb

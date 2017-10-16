@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="EsquemaBD">
+  <DataContextMoniker Name="/EsquemaBDDataContext" />
+  <nestedChildShapes>
+    <classShape Id="0440c922-c73e-4a45-863a-a0533146b0ff" absoluteBounds="7.125, 0.5, 2, 0.8093896484375">
+      <DataClassMoniker Name="/EsquemaBDDataContext/PLD_PERSONA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="88cdcba8-b845-4366-ae40-57f5f3eadff9" isExpanded="false" absoluteBounds="7.1400000000000006, 0.96, 1.9700000000000002, 0.2493896484375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a2bc1922-d92f-41b2-be3c-f27edb8d3254" absoluteBounds="4.25, 0.5, 2, 0.8093896484375">
+      <DataClassMoniker Name="/EsquemaBDDataContext/CRE_PRODUCTO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ac0f9c2b-4d52-4c5e-a1ef-3f70f6d002d6" isExpanded="false" absoluteBounds="4.265, 0.96, 1.9700000000000002, 0.2493896484375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8c4929b1-a4d5-44b5-ad81-38986d49ef17" absoluteBounds="1.25, 0.5, 2, 0.8093896484375">
+      <DataClassMoniker Name="/EsquemaBDDataContext/CRE_CREDITO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2ed4e816-2ecf-40f9-98bf-90751ebfc951" isExpanded="false" absoluteBounds="1.2650000000000001, 0.96, 1.9700000000000002, 0.2493896484375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2c22928c-a502-49d5-a370-90e9bfa636a8" absoluteBounds="1.375, 1.75, 2, 0.8093896484375">
+      <DataClassMoniker Name="/EsquemaBDDataContext/CRE_CREDITO_CONCEPTO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ce3ab7f1-cf05-49bb-ba28-e64025ad75e1" isExpanded="false" absoluteBounds="1.39, 2.21, 1.9700000000000002, 0.2493896484375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a02605b0-33a5-4330-a1fe-142ec151354b" absoluteBounds="4.25, 1.75, 2, 0.8093896484375">
+      <DataClassMoniker Name="/EsquemaBDDataContext/CRE_HISTORICO_SALDO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="66d828af-efc1-4f8f-afde-38f713bf3b51" isExpanded="false" absoluteBounds="4.265, 2.21, 1.9700000000000002, 0.2493896484375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3cf26280-9b2f-4e29-90f8-ced3b3af7927" absoluteBounds="7.25, 1.625, 2, 0.80938964843749961">
+      <DataClassMoniker Name="/EsquemaBDDataContext/CRE_COD_ESTADO_CREDITO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d8069841-7399-4bf8-90cb-87586c3e55a7" isExpanded="false" absoluteBounds="7.2650000000000006, 2.085, 1.9700000000000002, 0.2493896484375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

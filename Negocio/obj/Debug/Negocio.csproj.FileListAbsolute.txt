@@ -1,0 +1,24 @@
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Negocio\bin\Debug\Negocio.dll.config
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Negocio\bin\Debug\Negocio.dll
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Negocio\bin\Debug\Negocio.pdb
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Negocio\bin\Debug\Entidad.dll
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Negocio\bin\Debug\Modelos.dll
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Negocio\bin\Debug\itextsharp.dll
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Negocio\bin\Debug\Entidad.pdb
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Negocio\bin\Debug\Modelos.pdb
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Negocio\bin\Debug\itextsharp.xml
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Negocio\obj\Debug\Negocio.dll
+C:\Users\SYSETI27\Documents\Visual Studio 2015\Projects\QuantoAPI\Negocio\obj\Debug\Negocio.pdb
+C:\desarrollo\QuantoAPI\Negocio\bin\Debug\Negocio.dll.config
+C:\desarrollo\QuantoAPI\Negocio\bin\Debug\Negocio.dll
+C:\desarrollo\QuantoAPI\Negocio\bin\Debug\Negocio.pdb
+C:\desarrollo\QuantoAPI\Negocio\bin\Debug\Entidad.dll
+C:\desarrollo\QuantoAPI\Negocio\bin\Debug\Modelos.dll
+C:\desarrollo\QuantoAPI\Negocio\bin\Debug\itextsharp.dll
+C:\desarrollo\QuantoAPI\Negocio\bin\Debug\Entidad.pdb
+C:\desarrollo\QuantoAPI\Negocio\bin\Debug\Modelos.pdb
+C:\desarrollo\QuantoAPI\Negocio\bin\Debug\itextsharp.xml
+C:\desarrollo\QuantoAPI\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\desarrollo\QuantoAPI\Negocio\obj\Debug\Negocio.dll
+C:\desarrollo\QuantoAPI\Negocio\obj\Debug\Negocio.pdb
