@@ -12,7 +12,6 @@ namespace Negocio
         {
             this.EstadosCuentas = new List<InnerEstadoCuenta>();
         }
-        public int Equivalencia { get; set; }
         public int IdCliente { get; set; }
         public string NombreCliente { get; set; }
         public string Contrato { get; set; }

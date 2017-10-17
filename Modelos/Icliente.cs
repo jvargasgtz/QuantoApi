@@ -10,5 +10,7 @@ namespace Modelos
     public interface Icliente
     {
         List<string> ObtenerInformacionCliente(EntidadCreditoBase entidad);
+        string ObtenerContratoCliente(EntidadCreditoBase entidad);
+        DateTime ObtenerFechaVencimiento(EntidadCreditoBase entidad);
     }
 }

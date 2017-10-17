@@ -146,6 +146,7 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\CredimonController.cs" />
+    <Compile Include="Controllers\QuantoController.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -173,6 +174,10 @@
     <ProjectReference Include="..\Negocio\Negocio.csproj">
       <Project>{6be494e0-f21e-4e7f-84af-a53fe9eb4e32}</Project>
       <Name>Negocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TestApi\TestApi.csproj">
+      <Project>{6db25052-c201-4095-bdba-7041ea72bd62}</Project>
+      <Name>TestApi</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -11,7 +11,11 @@ namespace QuantoAPI.Controllers
         [HttpPost]
         public JsonResult<List<ResponseCredito>> operacionesactivas(Negocio.RequestActivo request)
         {
-            OperacionesActivas OperacionBase = new OperacionesActivas();
+            IConsultasCredito consutasCredito = new ConsultasCreditos();
+            IEstadodeCuenta consultasEstadoDeCuenta = new ConsultasEstadoDeCuenta();
+            Iconsultassaldos consultassaldos = new ConsultasSaldos();
+
+            OperacionesActivas OperacionBase = new OperacionesActivas(consutasCredito, consultasEstadoDeCuenta, consultassaldos);
             List<ResponseCredito> ResultantesActivas = OperacionBase.Procesar(request);
 
             return Json(ResultantesActivas);

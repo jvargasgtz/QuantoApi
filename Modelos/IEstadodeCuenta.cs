@@ -15,7 +15,6 @@ namespace Modelos
         List<CRE_CREDITO> ObtenerEstadoDeCuenta(EntidadCreditoBase EntidadCredito);
         string ObtenerContrato(EntidadCreditoBase entidadCredito);
         int ObtenerLineas(EntidadCreditoBase EntidadCredito);
-        string ObtenerEstado(int credito);
         decimal CreditoDisponible(int solicitante);
         decimal SaldoInicialConFecha(int idcredito, DateTime fechainicio, DateTime fechafin);
         decimal SaldoFinalConFecha(int idcredito, DateTime fechainicio, DateTime fechafin);

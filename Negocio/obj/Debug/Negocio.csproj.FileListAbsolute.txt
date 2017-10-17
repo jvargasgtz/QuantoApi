@@ -22,3 +22,5 @@ C:\desarrollo\QuantoAPI\Negocio\bin\Debug\itextsharp.xml
 C:\desarrollo\QuantoAPI\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
 C:\desarrollo\QuantoAPI\Negocio\obj\Debug\Negocio.dll
 C:\desarrollo\QuantoAPI\Negocio\obj\Debug\Negocio.pdb
+C:\desarrollo\QuantoAPI\Negocio\bin\Debug\Operacion.dll
+C:\desarrollo\QuantoAPI\Negocio\bin\Debug\Operacion.pdb

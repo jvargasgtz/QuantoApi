@@ -38,5 +38,11 @@
         <elementListCompartment Id="d8069841-7399-4bf8-90cb-87586c3e55a7" isExpanded="false" absoluteBounds="7.2650000000000006, 2.085, 1.9700000000000002, 0.2493896484375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
+    <classShape Id="58032f8e-1039-41c8-a50d-11b8e79b0847" absoluteBounds="1.125, 3.25, 2, 0.80938964843749961">
+      <DataClassMoniker Name="/EsquemaBDDataContext/PLD_COD_DIVISA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b0fd1f0e-a3f1-474b-835e-0fdb769d728f" isExpanded="false" absoluteBounds="1.14, 3.71, 1.9700000000000002, 0.2493896484375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>

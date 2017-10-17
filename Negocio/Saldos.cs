@@ -31,10 +31,8 @@ namespace Negocio
             entidadbase.equivalencia = request.Equivalencia;
 
             entidadbase.idpersona = _consultasCredito.ObtenerIdPersonaPorReferencia(entidadbase);
-
-            entidadbase.NLinea = _consultasEstadoDeCuenta.ObtenerLineas(entidadbase);
-
-            var ministraciones = _consultasEstadoDeCuenta.MinistracionesPorLinea(entidadbase);
+            
+            var ministraciones = _consultasCredito.ObtenerCreditosPorCliente(entidadbase);
 
             Listresponse.Saldos = new List<InnerSaldosPorCliente>();
 
@@ -45,11 +43,11 @@ namespace Negocio
                 innerResponse.IdCredito = item.idCredito;
                 innerResponse.FechaDesembolso = item.FechaDesembolso.Value;
                 innerResponse.FechaVencimiento = item.FechaVencimiento.Value;
-                innerResponse.MontoDispuesto = item.Monto.Value;
-                innerResponse.MontoaPagar = _consultassaldos.ObtenerSaldoAlVencimiento(entidadbase, request.FechaInicio, request.FechaFin);
-                innerResponse.SaldoalDia = _consultasEstadoDeCuenta.saldoalcorte(item.idCredito);
-                innerResponse.Divisa = "PESOS";
-                innerResponse.Estado = _consultasEstadoDeCuenta.ObtenerEstado(item.idCredito);
+                innerResponse.MontoDispuesto = item.MontoDesembolsado.Value;
+                innerResponse.MontoaPagar = _consultasCredito.ConsultasMontoAPagar(entidadbase);
+                innerResponse.SaldoalDia = _consultasCredito.ConsultasCreCreditoConcepto(entidadbase);
+                innerResponse.Divisa = _consultasCredito.ObtenerDivisa(item.idCredito);
+                innerResponse.Estado = _consultasCredito.ObtenerEstado(item.idCredito);
                 Listresponse.Saldos.Add(innerResponse);
             }
 

@@ -10,8 +10,16 @@ namespace Negocio
 {
     public class OperacionesActivas
     {
-        public OperacionesActivas()
-        { }
+        IEstadodeCuenta _consultasEstadoDeCuenta;
+        IConsultasCredito _consultasCredito;
+        Iconsultassaldos _consultassaldos;
+
+        public OperacionesActivas(IConsultasCredito consutasCredito, IEstadodeCuenta consultasEstadodeCuenta, Iconsultassaldos consultassaldos)
+        {
+            this._consultasEstadoDeCuenta = consultasEstadodeCuenta;
+            this._consultasCredito = consutasCredito;
+            this._consultassaldos = consultassaldos;
+        }
 
         public List<ResponseCredito> Procesar(RequestActivo request)
         {
@@ -21,10 +29,9 @@ namespace Negocio
             
             ResponseCredito Listresponse = new ResponseCredito();
 
-            ConsultasCreditos consultasCredito = new ConsultasCreditos();
             entidadCredito.equivalencia = request.Equivalencia;
 
-            var listaCreditos =  consultasCredito.CreditosPorReferencia(entidadCredito);
+            var listaCreditos = _consultasCredito.ObtenerCreditosPorCliente(entidadCredito);
             
             Listresponse.Creditos = new List<InnerActivo>();
 
@@ -36,10 +43,10 @@ namespace Negocio
                 innerResponse.Nocredito = item.idCredito;
                 innerResponse.FechaDesembolso = item.FechaDesembolso.Value;
                 innerResponse.FechaVencimiento = item.FechaVencimiento.Value;
-                innerResponse.MontoDispuesto = consultasCredito.MontoDispuesto(item.idCredito);
-                innerResponse.MontoAPagar = consultasCredito.ConsultasCreCreditoConcepto(entidadCredito);
-                innerResponse.SaldoAlDia = consultasCredito.ConsultasCreCreditoConcepto(entidadCredito);
-                innerResponse.Divisa = "Pesos";
+                innerResponse.MontoDispuesto = item.MontoDesembolsado.Value;
+                innerResponse.MontoAPagar = _consultasCredito.ConsultasMontoAPagar(entidadCredito);
+                innerResponse.SaldoAlDia = _consultasCredito.ConsultasCreCreditoConcepto(entidadCredito);
+                innerResponse.Divisa = _consultasCredito.ObtenerDivisa(item.idCredito);
 
                 Listresponse.Creditos.Add(innerResponse);
             }

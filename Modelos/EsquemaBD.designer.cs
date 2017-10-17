@@ -48,6 +48,9 @@ namespace Modelos
     partial void InsertCRE_COD_ESTADO_CREDITO(CRE_COD_ESTADO_CREDITO instance);
     partial void UpdateCRE_COD_ESTADO_CREDITO(CRE_COD_ESTADO_CREDITO instance);
     partial void DeleteCRE_COD_ESTADO_CREDITO(CRE_COD_ESTADO_CREDITO instance);
+    partial void InsertPLD_COD_DIVISA(PLD_COD_DIVISA instance);
+    partial void UpdatePLD_COD_DIVISA(PLD_COD_DIVISA instance);
+    partial void DeletePLD_COD_DIVISA(PLD_COD_DIVISA instance);
     #endregion
 		
 		public EsquemaBDDataContext() : 
@@ -125,6 +128,14 @@ namespace Modelos
 			get
 			{
 				return this.GetTable<CRE_COD_ESTADO_CREDITO>();
+			}
+		}
+		
+		public System.Data.Linq.Table<PLD_COD_DIVISA> PLD_COD_DIVISA
+		{
+			get
+			{
+				return this.GetTable<PLD_COD_DIVISA>();
 			}
 		}
 	}
@@ -7820,6 +7831,404 @@ namespace Modelos
 					this._Descripcion = value;
 					this.SendPropertyChanged("Descripcion");
 					this.OnDescripcionChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.PLD_COD_DIVISA")]
+	public partial class PLD_COD_DIVISA : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _IdDivisa;
+		
+		private string _Descripcion;
+		
+		private string _CodigoUIF;
+		
+		private System.Nullable<int> _idPais;
+		
+		private string _Equivalencia;
+		
+		private System.Nullable<int> _IdEstado;
+		
+		private System.Nullable<int> _idUsuarioCreacion;
+		
+		private System.Nullable<System.DateTime> _FechaCreacion;
+		
+		private System.Nullable<int> _idUsuarioActualizacion;
+		
+		private System.Nullable<System.DateTime> _FechaActualizacion;
+		
+		private string _Codigo1;
+		
+		private string _Codigo2;
+		
+		private string _Codigo3;
+		
+		private string _Codigo4;
+		
+		private string _Codigo5;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdDivisaChanging(int value);
+    partial void OnIdDivisaChanged();
+    partial void OnDescripcionChanging(string value);
+    partial void OnDescripcionChanged();
+    partial void OnCodigoUIFChanging(string value);
+    partial void OnCodigoUIFChanged();
+    partial void OnidPaisChanging(System.Nullable<int> value);
+    partial void OnidPaisChanged();
+    partial void OnEquivalenciaChanging(string value);
+    partial void OnEquivalenciaChanged();
+    partial void OnIdEstadoChanging(System.Nullable<int> value);
+    partial void OnIdEstadoChanged();
+    partial void OnidUsuarioCreacionChanging(System.Nullable<int> value);
+    partial void OnidUsuarioCreacionChanged();
+    partial void OnFechaCreacionChanging(System.Nullable<System.DateTime> value);
+    partial void OnFechaCreacionChanged();
+    partial void OnidUsuarioActualizacionChanging(System.Nullable<int> value);
+    partial void OnidUsuarioActualizacionChanged();
+    partial void OnFechaActualizacionChanging(System.Nullable<System.DateTime> value);
+    partial void OnFechaActualizacionChanged();
+    partial void OnCodigo1Changing(string value);
+    partial void OnCodigo1Changed();
+    partial void OnCodigo2Changing(string value);
+    partial void OnCodigo2Changed();
+    partial void OnCodigo3Changing(string value);
+    partial void OnCodigo3Changed();
+    partial void OnCodigo4Changing(string value);
+    partial void OnCodigo4Changed();
+    partial void OnCodigo5Changing(string value);
+    partial void OnCodigo5Changed();
+    #endregion
+		
+		public PLD_COD_DIVISA()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IdDivisa", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int IdDivisa
+		{
+			get
+			{
+				return this._IdDivisa;
+			}
+			set
+			{
+				if ((this._IdDivisa != value))
+				{
+					this.OnIdDivisaChanging(value);
+					this.SendPropertyChanging();
+					this._IdDivisa = value;
+					this.SendPropertyChanged("IdDivisa");
+					this.OnIdDivisaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Descripcion", DbType="VarChar(100)")]
+		public string Descripcion
+		{
+			get
+			{
+				return this._Descripcion;
+			}
+			set
+			{
+				if ((this._Descripcion != value))
+				{
+					this.OnDescripcionChanging(value);
+					this.SendPropertyChanging();
+					this._Descripcion = value;
+					this.SendPropertyChanged("Descripcion");
+					this.OnDescripcionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CodigoUIF", DbType="VarChar(50)")]
+		public string CodigoUIF
+		{
+			get
+			{
+				return this._CodigoUIF;
+			}
+			set
+			{
+				if ((this._CodigoUIF != value))
+				{
+					this.OnCodigoUIFChanging(value);
+					this.SendPropertyChanging();
+					this._CodigoUIF = value;
+					this.SendPropertyChanged("CodigoUIF");
+					this.OnCodigoUIFChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idPais", DbType="Int")]
+		public System.Nullable<int> idPais
+		{
+			get
+			{
+				return this._idPais;
+			}
+			set
+			{
+				if ((this._idPais != value))
+				{
+					this.OnidPaisChanging(value);
+					this.SendPropertyChanging();
+					this._idPais = value;
+					this.SendPropertyChanged("idPais");
+					this.OnidPaisChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Equivalencia", DbType="VarChar(50)")]
+		public string Equivalencia
+		{
+			get
+			{
+				return this._Equivalencia;
+			}
+			set
+			{
+				if ((this._Equivalencia != value))
+				{
+					this.OnEquivalenciaChanging(value);
+					this.SendPropertyChanging();
+					this._Equivalencia = value;
+					this.SendPropertyChanged("Equivalencia");
+					this.OnEquivalenciaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IdEstado", DbType="Int")]
+		public System.Nullable<int> IdEstado
+		{
+			get
+			{
+				return this._IdEstado;
+			}
+			set
+			{
+				if ((this._IdEstado != value))
+				{
+					this.OnIdEstadoChanging(value);
+					this.SendPropertyChanging();
+					this._IdEstado = value;
+					this.SendPropertyChanged("IdEstado");
+					this.OnIdEstadoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idUsuarioCreacion", DbType="Int")]
+		public System.Nullable<int> idUsuarioCreacion
+		{
+			get
+			{
+				return this._idUsuarioCreacion;
+			}
+			set
+			{
+				if ((this._idUsuarioCreacion != value))
+				{
+					this.OnidUsuarioCreacionChanging(value);
+					this.SendPropertyChanging();
+					this._idUsuarioCreacion = value;
+					this.SendPropertyChanged("idUsuarioCreacion");
+					this.OnidUsuarioCreacionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FechaCreacion", DbType="DateTime")]
+		public System.Nullable<System.DateTime> FechaCreacion
+		{
+			get
+			{
+				return this._FechaCreacion;
+			}
+			set
+			{
+				if ((this._FechaCreacion != value))
+				{
+					this.OnFechaCreacionChanging(value);
+					this.SendPropertyChanging();
+					this._FechaCreacion = value;
+					this.SendPropertyChanged("FechaCreacion");
+					this.OnFechaCreacionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idUsuarioActualizacion", DbType="Int")]
+		public System.Nullable<int> idUsuarioActualizacion
+		{
+			get
+			{
+				return this._idUsuarioActualizacion;
+			}
+			set
+			{
+				if ((this._idUsuarioActualizacion != value))
+				{
+					this.OnidUsuarioActualizacionChanging(value);
+					this.SendPropertyChanging();
+					this._idUsuarioActualizacion = value;
+					this.SendPropertyChanged("idUsuarioActualizacion");
+					this.OnidUsuarioActualizacionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FechaActualizacion", DbType="DateTime")]
+		public System.Nullable<System.DateTime> FechaActualizacion
+		{
+			get
+			{
+				return this._FechaActualizacion;
+			}
+			set
+			{
+				if ((this._FechaActualizacion != value))
+				{
+					this.OnFechaActualizacionChanging(value);
+					this.SendPropertyChanging();
+					this._FechaActualizacion = value;
+					this.SendPropertyChanged("FechaActualizacion");
+					this.OnFechaActualizacionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Codigo1", DbType="VarChar(50)")]
+		public string Codigo1
+		{
+			get
+			{
+				return this._Codigo1;
+			}
+			set
+			{
+				if ((this._Codigo1 != value))
+				{
+					this.OnCodigo1Changing(value);
+					this.SendPropertyChanging();
+					this._Codigo1 = value;
+					this.SendPropertyChanged("Codigo1");
+					this.OnCodigo1Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Codigo2", DbType="VarChar(50)")]
+		public string Codigo2
+		{
+			get
+			{
+				return this._Codigo2;
+			}
+			set
+			{
+				if ((this._Codigo2 != value))
+				{
+					this.OnCodigo2Changing(value);
+					this.SendPropertyChanging();
+					this._Codigo2 = value;
+					this.SendPropertyChanged("Codigo2");
+					this.OnCodigo2Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Codigo3", DbType="VarChar(50)")]
+		public string Codigo3
+		{
+			get
+			{
+				return this._Codigo3;
+			}
+			set
+			{
+				if ((this._Codigo3 != value))
+				{
+					this.OnCodigo3Changing(value);
+					this.SendPropertyChanging();
+					this._Codigo3 = value;
+					this.SendPropertyChanged("Codigo3");
+					this.OnCodigo3Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Codigo4", DbType="VarChar(50)")]
+		public string Codigo4
+		{
+			get
+			{
+				return this._Codigo4;
+			}
+			set
+			{
+				if ((this._Codigo4 != value))
+				{
+					this.OnCodigo4Changing(value);
+					this.SendPropertyChanging();
+					this._Codigo4 = value;
+					this.SendPropertyChanged("Codigo4");
+					this.OnCodigo4Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Codigo5", DbType="VarChar(50)")]
+		public string Codigo5
+		{
+			get
+			{
+				return this._Codigo5;
+			}
+			set
+			{
+				if ((this._Codigo5 != value))
+				{
+					this.OnCodigo5Changing(value);
+					this.SendPropertyChanging();
+					this._Codigo5 = value;
+					this.SendPropertyChanged("Codigo5");
+					this.OnCodigo5Changed();
 				}
 			}
 		}

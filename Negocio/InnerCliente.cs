@@ -11,6 +11,6 @@ namespace Negocio
         public int IdCliente { get; set; }
         public string NombreCliente { get; set; }
         public string IdContrato { get; set; }
-        public string FechaVencimiento { get; set; }
+        public DateTime FechaVencimiento { get; set; }
     }
 }

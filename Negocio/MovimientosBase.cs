@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Entidad;
 using Modelos;
+using Operacion;
 
 namespace Negocio
 {
@@ -36,27 +37,23 @@ namespace Negocio
             entidad.equivalencia = request.equivalencia;
 
             entidad.idpersona = _consultasCredito.ObtenerIdPersonaPorReferencia(entidad);
-
-            entidad.NLinea = _consultasEstadoDeCuenta.ObtenerLineas(entidad);
-
-            var ministraciones = _consultasEstadoDeCuenta.MinistracionesPorLinea(entidad);
-
-            var listaconceptos = _consultasmovimientos.ObtenerMovimientosAbonos(ministraciones);
-
-            foreach (var item in listaconceptos)
+            
+            var ListaCreditos = _consultasCredito.ObtenerCreditosPorCliente(entidad);
+            
+            foreach (var item in ListaCreditos)
             {
                 InnerMovimientosCliente innerResponse = new InnerMovimientosCliente();
-                entidad.credito = item;
+                entidad.credito = item.idCredito;
 
-                innerResponse.idCredito = item;
-                innerResponse.Capital = _consultasmovimientos.ObtenerDatosCrecredito(item, 2);
-                innerResponse.Interes = _consultasmovimientos.ObtenerDatosCrecredito(item, 3);
-                innerResponse.Mora = _consultasmovimientos.ObtenerDatosCrecredito(item, 4);
-                innerResponse.Impuestos = _consultasmovimientos.ObtenerDatosCrecredito(item, 7);
-                innerResponse.Cargos = _consultasmovimientos.ObtenerDatosCrecredito(item, 6);
+                innerResponse.idCredito = item.idCredito;
+                innerResponse.Capital = _consultasmovimientos.ObtenerDatosCrecredito(item.idCredito, (int)constantes.ConceptoCapital);
+                innerResponse.Interes = _consultasmovimientos.ObtenerDatosCrecredito(item.idCredito, (int)constantes.ConceptoInteres);
+                innerResponse.Mora = _consultasmovimientos.ObtenerDatosCrecredito(item.idCredito, (int)constantes.conceptoMoratorio);
+                innerResponse.Impuestos = _consultasmovimientos.ObtenerDatosCrecredito(item.idCredito, (int)constantes.ConceptoIva);
+                innerResponse.Cargos = _consultasmovimientos.ObtenerDatosCrecredito(item.idCredito, (int)constantes.ConceptoCargo);
                 innerResponse.Total = _consultassaldos.ObtenerSaldoAlVencimiento(entidad, request.FechaInicio, request.FechaFin);
-                innerResponse.Divisa = "PESOS";
-                innerResponse.FechaDePago = _consultasmovimientos.ObtenerFechaPago(item);
+                innerResponse.Divisa = _consultasCredito.ObtenerDivisa(item.idCredito);
+                innerResponse.FechaDePago = _consultasmovimientos.ObtenerFechaPago(item.idCredito);
 
                 Listresponse.Movimientos.Add(innerResponse);
             }

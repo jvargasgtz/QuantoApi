@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Entidad;
 using Modelos;
+using Operacion;
 
 namespace Modelos
 {
@@ -26,15 +27,6 @@ namespace Modelos
 
                 Ncreditos.Add(numerosc.FirstOrDefault());
             }
-
-            //var abonos = new List<CRE_CREDITO_CONCEPTO>();
-            //foreach (var conceptos in CREDITOS)
-            //{
-            //    abonos = (from a in esquema.CRE_CREDITO_CONCEPTO
-            //                 where a.IdCredito == conceptos.idCredito
-            //                 select a).ToList();
-            //}
-
             return Ncreditos;
         }
 
@@ -49,14 +41,14 @@ namespace Modelos
             }
             else
             {
-                return 0;
+                return (int)constantes.RegresarCero;
             }
         }
 
         public DateTime ObtenerFechaPago(int idcredito)
         {
             var fecha = from f in esquema.CRE_HISTORICO_SALDO
-                        where f.idCredito == idcredito && f.idConcepto == 2 && f.idTipoMonto == 4
+                        where f.idCredito == idcredito && f.idConcepto == (int)constantes.ConceptoCapital && f.idTipoMonto == (int)constantes.MontoTotal
                         select f.Fecha.Value;
 
             return fecha.FirstOrDefault();

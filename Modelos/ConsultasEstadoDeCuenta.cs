@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Entidad;
+using Operacion;
 
 namespace Modelos
 {
@@ -55,7 +56,7 @@ namespace Modelos
         {
             var lineas = from l in esquema.CRE_CREDITO
                          where l.idPersonaSolicitante == EntidadCredito.idpersona && l.idEstadoCredito == 4
-                         && l.idTipoRegistro == 3 && l.idEstado == 1
+                         && l.idTipoRegistro == (int)constantes.TipoRegistroLinea && l.idEstado == 1
                          select l;
             decimal Monto = 0;
 
@@ -71,8 +72,9 @@ namespace Modelos
         {
             var NumeroLinea = from NL in esquema.CRE_CREDITO
                               where NL.idPersonaSolicitante == EntidadCredito.idpersona
-                              && NL.idEstadoCredito == 4 && NL.idTipoRegistro == 3
-                              && NL.idEstado == 1
+                              && NL.idEstadoCredito == (int)constantes.CreditoAutorizado 
+                              && NL.idTipoRegistro == (int)constantes.TipoRegistroLinea
+                              && NL.idEstado == (int)constantes.EstadoActivo
                               select NL;
             int idlinea = 0;
 
@@ -88,7 +90,7 @@ namespace Modelos
         {
             var ListaMinistracion = from LM in esquema.CRE_CREDITO
                                     where LM.idLinea == EntidadCredito.NLinea && LM.idPersonaSolicitante == EntidadCredito.idpersona
-                                    && LM.idEstadoCredito == 7 && LM.idEstado == 1
+                                    && LM.idEstadoCredito == (int)constantes.EstadocreditoActivo && LM.idEstado == (int)constantes.EstadoActivo
                                     select LM;
 
             return ListaMinistracion.ToList();
@@ -98,10 +100,11 @@ namespace Modelos
         {
             int[] conceptos = { 2, 3 };
             var saldo = (from s in esquema.CRE_HISTORICO_SALDO
-                         where s.idCredito == idcredito && s.idEstado == 1
-                         && (conceptos.Contains(s.idConcepto.Value)) && s.idTipoMonto == 4
+                         where s.idCredito == idcredito && s.idEstado == (int)constantes.EstadoActivo
+                         && (conceptos.Contains(s.idConcepto.Value)) && s.idTipoMonto == (int)constantes.MontoTotal
                          select s.Saldo).Sum();
-            if (saldo == null) { return 0; }
+
+            if (saldo == null) { return (int)constantes.RegresarCero; }
             else
             { return saldo.Value; }
         }
@@ -110,28 +113,17 @@ namespace Modelos
         {
             var contrato = from NL in esquema.CRE_CREDITO
                            where NL.idPersonaSolicitante == EntidadCredito.idpersona
-                           && NL.idEstadoCredito == 4 && NL.idTipoRegistro == 3
-                           && NL.idEstado == 1
+                           && NL.idEstadoCredito == (int)constantes.EstadocreditoActivo
+                           && NL.idEstado == (int)constantes.EstadoActivo
                            select NL.Contrato;
             return contrato.FirstOrDefault();
         }
-
-        public string ObtenerEstado(int credito)
-        {
-            var listaestados = from e in esquema.CRE_CREDITO
-                               join es in esquema.CRE_COD_ESTADO_CREDITO
-                               on e.idEstadoCredito equals es.idEstado
-                               where e.idCredito == credito
-                               select es.Descripcion;
-
-            return listaestados.FirstOrDefault();
-        }
-
+        
         public decimal CreditoDisponible(int solicitante)
         {
             var disponible = from d in esquema.CRE_CREDITO
                              where d.idPersonaSolicitante == solicitante
-                             && d.idEstadoCredito == 7 && d.idEstado == 1
+                             && d.idEstadoCredito == (int)constantes.EstadocreditoActivo && d.idEstado == (int)constantes.EstadoActivo
                              select d.Monto.Value;
 
             return disponible.FirstOrDefault();
@@ -139,33 +131,43 @@ namespace Modelos
 
         public decimal SaldoInicialConFecha(int idcredito, DateTime fechainicio,DateTime fechafin)
         {
-            var saldoinicial = (from si in esquema.CRE_CREDITO_CONCEPTO
-                               where si.IdCredito == idcredito && si.FechaInicio >= fechainicio
-                               && si.FechaInicio <= fechafin && si.IdConcepto == 2 &&
-                               si.IdConcepto == 3 && si.IdConcepto == 4
-                               select si.Saldo).Sum();
+            decimal saldoinicial = 0;
+            List<int> tiposConceptos = new List<int> { 2, 3, 4 };
 
-            if (saldoinicial.Equals(null))
+            foreach (var concepto in tiposConceptos)
             {
-                return 0;
+                var saldo = from si in esquema.CRE_CREDITO_CONCEPTO
+                            where si.IdCredito == idcredito && si.FechaInicio >= fechainicio
+                            && si.FechaInicio <= fechafin && si.IdConcepto == concepto
+                            select si.Saldo;
+
+                if (saldo.Any())
+                {
+                    saldoinicial += saldo.Sum().Value;
+                }
             }
-            else { return saldoinicial.Value; }
-            
+
+            return saldoinicial;
         }
 
         public decimal SaldoFinalConFecha(int idcredito, DateTime fechainicio, DateTime fechafin)
         {
-            var saldofinal = (from si in esquema.CRE_CREDITO_CONCEPTO
-                                where si.IdCredito == idcredito && si.FechaFin >= fechainicio
-                                && si.FechaFin <= fechafin && si.IdConcepto == 2 &&
-                                si.IdConcepto == 3 && si.IdConcepto == 4
-                                select si.Saldo).Sum();
+            decimal saldofinal = 0;
+            List<int> tiposConceptos = new List<int> { 2, 3, 4 };
 
-            if (saldofinal.Equals(null))
+            foreach (var concepto in tiposConceptos)
             {
-                return 0;
+                var saldos =  from si in esquema.CRE_CREDITO_CONCEPTO
+                                  where si.IdCredito == idcredito && si.FechaFin >= fechainicio
+                                  && si.FechaFin <= fechafin && si.IdConcepto == concepto 
+                                  select si.Saldo;
+                if (saldos.Any())
+                {
+                    saldofinal += saldos.Sum().Value;
+                }
             }
-            else { return saldofinal.Value; }
+            return saldofinal;
         }
+
     }
 }

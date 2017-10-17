@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Operacion
+namespace TestApi.Auth
 {
-    //class creditos
-    //{ }
-    public enum tiporegistro
+    interface IAuthenticate
     {
-        idTiporegitro = 4
+        bool isAuthenticated(string userName, string password);
     }
 }

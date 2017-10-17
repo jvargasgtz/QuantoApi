@@ -31,10 +31,8 @@ namespace Negocio
 
             entidad.idpersona = _consultasCredito.ObtenerIdPersonaPorReferencia(entidad);
 
-            var contratoyfecha = _cliente.ObtenerInformacionCliente(entidad);
-
-            innerResponse.IdContrato = contratoyfecha[0].ToString();
-            innerResponse.FechaVencimiento = contratoyfecha[1].ToString();
+            innerResponse.IdContrato = _cliente.ObtenerContratoCliente(entidad);
+            innerResponse.FechaVencimiento = _cliente.ObtenerFechaVencimiento(entidad);
 
             return innerResponse;
         }

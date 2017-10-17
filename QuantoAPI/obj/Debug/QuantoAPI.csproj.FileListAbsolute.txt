@@ -122,3 +122,5 @@ C:\desarrollo\QuantoAPI\QuantoAPI\bin\es\System.Web.Http.WebHost.resources.dll
 C:\desarrollo\QuantoAPI\QuantoAPI\obj\Debug\QuantoAPI.csprojResolveAssemblyReference.cache
 C:\desarrollo\QuantoAPI\QuantoAPI\obj\Debug\QuantoAPI.dll
 C:\desarrollo\QuantoAPI\QuantoAPI\obj\Debug\QuantoAPI.pdb
+C:\desarrollo\QuantoAPI\QuantoAPI\bin\TestApi.dll
+C:\desarrollo\QuantoAPI\QuantoAPI\bin\TestApi.pdb

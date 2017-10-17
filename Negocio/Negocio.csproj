@@ -73,6 +73,10 @@
       <Project>{308755db-3675-4a3d-ba46-f6ec30644f8a}</Project>
       <Name>Modelos</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Operacion\Operacion.csproj">
+      <Project>{6505f4a8-4441-44f5-a27f-dc8141f3d38e}</Project>
+      <Name>Operacion</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

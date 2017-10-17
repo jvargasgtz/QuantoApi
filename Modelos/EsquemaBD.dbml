@@ -336,4 +336,23 @@
       <Column Name="Descripcion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.PLD_COD_DIVISA" Member="PLD_COD_DIVISA">
+    <Type Name="PLD_COD_DIVISA">
+      <Column Name="IdDivisa" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CodigoUIF" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="idPais" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Equivalencia" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IdEstado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idUsuarioCreacion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FechaCreacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="idUsuarioActualizacion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FechaActualizacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Codigo1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo4" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo5" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
 </Database>

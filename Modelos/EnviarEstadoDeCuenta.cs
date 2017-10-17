@@ -12,6 +12,8 @@ using System.Web;
 using System.Data;
 using Newtonsoft.Json;
 using System.Net;
+using MailChimp.Types;
+using MailChimp;
 
 namespace Modelos
 {
@@ -21,9 +23,6 @@ namespace Modelos
 
         public void EnviarEstadoCuentaPorCliente(EntidadCreditoBase entidad)
         {
-            //MailMessage Destinatario = new MailMessage();
-            //SmtpClient Protocolo = new SmtpClient();
-
             iTextSharp.text.Font _standardFont = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 10, iTextSharp.text.Font.NORMAL, BaseColor.BLACK);
             iTextSharp.text.Font _FontHead = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 10, iTextSharp.text.Font.NORMAL, BaseColor.WHITE);
 
@@ -180,26 +179,26 @@ namespace Modelos
             doc.Close();
 
             //MandrillApi api = new MandrillApi("GStybO25JJ5Krbv5icpXoA");
-            //var mensaje = new List<Mandrill.Messages.Recipient>();
+            //var mensaje = new Mandrill.Messages.Message();
+            //var recipients = new List<Mandrill.Messages.Recipient>();
+            //var name = string.Format("{0} {1}", "Jobert", "Enamno");
+            //recipients.Add
+            //(
+            //    new Mandrill.Messages.Recipient("jvargas@syseti.com", "jesus vargas")
+            //);
 
-            #region envio con credenciales
-            //Destinatario.Subject = "Estado de Cuenta";  
+            //var message = new Mandrill.Messages.Message()
+            //{
+            //    To = recipients.ToArray(),
+            //    FromEmail = "no-reply@syseti01.com",
+            //    Subject = "Estado De Cuenta",
+            //};
 
-            //Destinatario.To.Add("jvargas@syseti.com");
-
-            //System.Net.Mail.Attachment Archivo = new System.Net.Mail.Attachment(HttpContext.Current.Server.MapPath(@"~\Temp\Estadodecuenta.pdf"));
-            //Destinatario.Attachments.Add(Archivo);
-
-            //Destinatario.From = new MailAddress("jvargas@syseti.com");
-            //Protocolo.Credentials = new NetworkCredential("jvargas@syseti.com", "Comun1*");
-
-            //Protocolo.Host = "pop.secureserver.net";
-            //Protocolo.Host = "smtpout.secureserver.net";
-            //Protocolo.Port = 465;
-            //Protocolo.EnableSsl = true;
-
-            //Protocolo.Send(Destinatario);
-            #endregion
+            //var ruta = new Mandrill.Messages.Attachment[]
+            //{ new Mandrill.Messages.Attachment("application/pdf", "EstadoCuenta.pdf", true, Convert.ToBase64String(File.ReadAllBytes(HttpContext.Current.Server.MapPath(@"~\Temp\Estadodecuenta.pdf")))) };
+            //var attachs = new Opt<Mandrill.Messages.Attachment[]>(ruta);
+            //mensaje.Attachments = attachs;
+            //api.Send(mensaje);
         }
     }
 }
